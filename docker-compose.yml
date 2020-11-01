@@ -1,0 +1,9 @@
+version: '3'
+services:
+  elasticsearch.blowder.com:
+    image: elasticsearch:6.8.12
+    restart: always
+    environment:
+      discovery.type: single-node
+    ports:
+    - "9200:9200"
